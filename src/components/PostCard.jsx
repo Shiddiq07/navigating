@@ -18,12 +18,14 @@ return(
     to={`/movie/${id}`}
     className='text-decoration-none'>
 <div className="card text-white bg-dark mb-3 ms-2 h-100 shadow-lg transition-transform duration-300 hover:scale-[1.02]" style={{maxWidth: '18rem'}}>
-  <div className="card-header">{title}</div>
-  <div className="card-body">
-    <h5 className="card-title">{id}</h5>
+  <div className="card-header text-center">{title}</div>
+  <div className="card-body d-flex flex-column">
+        <p className="card-text"></p>
+    {/* <h5 className="card-title">Movie Id :{id}</h5> */}
+    <p className="card-text">Description :</p>
     <p className="card-text">{overview}</p>
     <p className="card-text">{list_type}</p>
-    <small className="text-muted">ID: {id}</small>
+    <small className="text-white mt-auto">ID: {id}</small>
   </div>
 </div>
 </Link>
