@@ -7,7 +7,7 @@ const SearchBar =({onSearchChange , searchTerm})=>{
         className="form-control form-control-lg bg-white text-primary border-primary "
         placeholder="Search for movies..."
         value={searchTerm}
-        onChange={(e)=>onSearchChange(e.target.value)}
+        onChange={onSearchChange}
         />
     </div>
     )
